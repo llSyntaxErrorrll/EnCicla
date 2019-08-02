@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- colores basicos -->
+    <color name="Blanco">#FFFFFF</color>
+    <color name="Negro">#202020</color>
+    <color name="NegroOscuro">#000000</color>
+
+    <color name="Azul">#1e88e5</color>
+    <color name="AzulOscuro">#005cb2</color>
+</resources>
