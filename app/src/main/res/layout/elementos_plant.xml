@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/dim_5"
+    android:elevation="@dimen/dim_5"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/elemt_picture"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dim_200" />
+
+        <TextView
+            android:padding="@dimen/dim_10"
+            android:id="@+id/elemt_name"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:padding="@dimen/dim_10"
+            android:id="@+id/elemt_adress"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:padding="@dimen/dim_10"
+            android:id="@+id/elemt_descripcion"
+            style="@style/TextAppearance.AppCompat.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/elemt_ubica"
+            android:text="@string/ver_ubica"
+            android:background="@color/Azul"
+            android:textColor="@color/Blanco"
+            android:layout_width="match_parent"
+            android:textAllCaps="false"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">EnCicla</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ver_lugar">Ver Lugares</string>
+    <string name="ver_ubica">Ver Ubicacion</string>
+    <string name="title_activity_maps">Map</string>
 </resources>

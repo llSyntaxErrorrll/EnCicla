@@ -3,7 +3,7 @@ package com.jfcerquera2.encicla.entitys;
 import com.google.gson.annotations.SerializedName;
 import java.util.List;
 
-public class LugaresCiclasEntity {
+public class EnCiclaEntity {
 
     public long date;
     public List<stations> stations = null;
@@ -41,5 +41,4 @@ public class LugaresCiclasEntity {
             public Long cdo;
         }
     }
-
 }
