@@ -33,7 +33,6 @@ public class ElementoAdapter extends RecyclerView.Adapter<ElementoAdapter.Elemen
     @Override
     public void onBindViewHolder(@NonNull ElementoHolder holder, int position) {
         final ElementosEstacionEntity data = elementosEstacionEntity.get(position);
-
         Picasso.get().load(data.getPicture()).into(holder.picture);
         holder.name.setText(data.getName());
         holder.adress.setText(data.getAddress());

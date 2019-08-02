@@ -1,54 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardUseCompatPadding="true"
-    app:cardCornerRadius="@dimen/dim_5"
+    style="@style/parent"
     android:elevation="@dimen/dim_5"
-    android:layout_height="wrap_content">
+    app:cardCornerRadius="@dimen/dim_5"
+    app:cardUseCompatPadding="true">
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        style="@style/parent"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/elemt_picture"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/dim_200" />
+            style="@style/item"
+            android:layout_height="@dimen/dim_200"/>
 
-        <TextView
-            android:padding="@dimen/dim_10"
-            android:id="@+id/elemt_name"
-            style="@style/TextAppearance.AppCompat.Title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+        <LinearLayout
+            style="@style/parent"
+            android:orientation="horizontal">
 
-        <TextView
-            android:padding="@dimen/dim_10"
-            android:id="@+id/elemt_adress"
-            style="@style/TextAppearance.AppCompat.Title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            <TextView
+                style="@style/item"
+                android:text="Nombre:" />
 
-        <TextView
-            android:padding="@dimen/dim_10"
-            android:id="@+id/elemt_descripcion"
-            style="@style/TextAppearance.AppCompat.Title"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/elemt_name"
+                style="@style/item" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/item"
+                android:text="Dirección:" />
+
+            <TextView
+                android:id="@+id/elemt_adress"
+                style="@style/item" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/item"
+                android:text="Descripción:" />
+
+            <TextView
+                android:id="@+id/elemt_descripcion"
+                style="@style/item" />
+        </LinearLayout>
 
         <Button
             android:id="@+id/elemt_ubica"
-            android:text="@string/ver_ubica"
-            android:background="@color/Azul"
-            android:textColor="@color/Blanco"
-            android:layout_width="match_parent"
-            android:textAllCaps="false"
-            android:layout_height="wrap_content" />
+            style="@style/boton"
+            android:text="@string/ver_ubica" />
 
     </LinearLayout>
-
-
 </androidx.cardview.widget.CardView>
