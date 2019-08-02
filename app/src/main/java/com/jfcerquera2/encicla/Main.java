@@ -32,7 +32,6 @@ public class Main extends AppCompatActivity implements LugaresAdapter.LugaresAda
 
         //iniciar metodos
         getAllData();
-        loadFrg();
     }
 
     private void getAllData() {
@@ -87,7 +86,9 @@ public class Main extends AppCompatActivity implements LugaresAdapter.LugaresAda
                         }
                     }
 
+                    //muestra mensaje y carga los datos
                     Toast.makeText(Main.this, "Datos guardados correctamente.", Toast.LENGTH_LONG).show();
+                    loadFrg();
                 }
 
                 @Override
@@ -96,6 +97,9 @@ public class Main extends AppCompatActivity implements LugaresAdapter.LugaresAda
                     Toast.makeText(Main.this, t.getMessage(), Toast.LENGTH_LONG).show();
                 }
             });
+        }else{
+            //cargar datos si ya existen
+            loadFrg();
         }
     }
 
